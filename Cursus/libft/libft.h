@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 14:04:58 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/09/23 17:04:25 by evasco-o         ###   ########.fr       */
+/*   Created: 2023/09/23 16:35:10 by evasco-o          #+#    #+#             */
+/*   Updated: 2023/09/23 18:35:04 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
-#include <stdio.h>
+#ifndef LIBFT_H
+#define LIBFT_H
 
-int	ft_isalpha(int c)
-{
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
-}
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+int	ft_isalnum(int c);
+int	ft_isascii(int c);
+int	ft_isprint(int c);
+size_t	ft_strlen(const char *s);
+void	*ft_memset(void *b, int c, size_t len);
+int	ft_toupper(int c);
+int	ft_tolower(int c);
 
-/*int main(void)
-{
-	char character = '1';
-
-	printf("%d", ft_isalpha(character));
-	return 0;
-}*/
+#endif

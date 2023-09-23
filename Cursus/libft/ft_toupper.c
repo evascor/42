@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 14:04:58 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/09/23 17:04:25 by evasco-o         ###   ########.fr       */
+/*   Created: 2023/09/23 17:52:17 by evasco-o          #+#    #+#             */
+/*   Updated: 2023/09/23 18:33:16 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 #include <stdio.h>
 
-int	ft_isalpha(int c)
+int	ft_toupper(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	if (c >= 97 && c <= 122)
+		c -= 32;
+	return (c);
 }
 
-/*int main(void)
+/*int main(int argc, char **argv)
 {
-	char character = '1';
-
-	printf("%d", ft_isalpha(character));
+	if (argc >=2)
+	{
+		char	letter = argv[argc - 1][0];
+		printf("%c", ft_toupper(letter));
+	}
 	return 0;
 }*/

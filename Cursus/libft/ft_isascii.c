@@ -6,9 +6,10 @@
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/22 17:04:20 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/09/22 17:35:32 by evasco-o         ###   ########.fr       */
+/*   Updated: 2023/09/23 17:04:49 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 #include <stdio.h>
 
 int	ft_isascii(int c)
