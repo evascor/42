@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 #include <stdio.h>
+#include <stddef.h>
 
 size_t	ft_strlen(const char *s)
 {
@@ -22,9 +23,11 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
+// %zu para devolver un size_t
+
 int main(void)
 {
 	char *string = "Hola";
-	printf("%d", ft_strlen(string));
+	printf("%zu", ft_strlen(string));
 	return (0);
 }
