@@ -11,11 +11,10 @@
 /* ************************************************************************** */
 #include "libft.h"
 #include <stdio.h>
-#include <stddef.h>
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (s[i])
@@ -25,9 +24,9 @@ size_t	ft_strlen(const char *s)
 
 // %zu para devolver un size_t
 
-int main(void)
+/*int main(void)
 {
 	char *string = "Hola";
 	printf("%zu", ft_strlen(string));
 	return (0);
-}
+}*/
