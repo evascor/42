@@ -27,7 +27,7 @@ char    *ft_strchr(const char *s, int c)
         return (NULL);
 }
 
-int main(int argc, char **argv)
+/*int main(int argc, char **argv)
 {
     if (argc >= 3)
     {
@@ -39,4 +39,4 @@ int main(int argc, char **argv)
             printf("%s\n", "NULL");
         return 0;
     }
-}
+}*/
