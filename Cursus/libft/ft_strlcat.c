@@ -1,47 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evasco-o <evasco-o@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/27 23:41:24 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/09/28 17:08:07 by evasco-o         ###   ########.fr       */
+/*   Created: 2023/09/29 11:16:03 by evasco-o          #+#    #+#             */
+/*   Updated: 2023/09/29 11:16:03 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 #include <stdio.h>
 
-// Mismo resultado de salida que snprintf, src length
-//(formatea y almacena datos en una string especifica tomando un lim max para 
-// asegurar que no se escriban más caracteres en la cadena de los que caben)
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-    size_t  i;
-    size_t  s_len;
+    size_t i;
+    size_t d_len;
 
     i = 0;
-    s_len = ft_strlen(src);
+    d_len = ft_strlen(dst);
     if (dstsize > 0)//min 1 para NULL
     {
         while (src[i]) // i tiene que ser menor que dst - 1 (cuenta NULL)
         {
-            dst[i] = src[i];
+            dst[d_len + i] = src[i];
             i++;
         }
         dst[i] = '\0';
     }
-    return (s_len);
+    return (d_len); 
 }
 
-/*int main(void)
+int main()
 {
-    char *src = "Hello world!";
-    char dst[20];
+    char *src = "world!";
+    char dst[20] = "Hello";
 
-    size_t  copy = ft_strlcpy(dst, src, sizeof(dst));
+    size_t cat = ft_strlcat(dst, src, sizeof(dst));
 
-    printf("%zu\n", copy); //especificador de formato para size_t
+    printf("%zu\n", cat); //especificador de formato para size_t
     printf("%s\n", src);
-}*/
+}
