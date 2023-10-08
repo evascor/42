@@ -21,18 +21,29 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	// 			needle not found > NULL return
 	// 			else > pointer fst char of fst occurrence
 	int	i;
-	int	j:
+	int	j;
 
 	i = 0;
-	j = 0;
-
-	if (needle == 0)
-		return (haystack);
-	while (haystack[i])
+	if (needle[0] == '\0')
+		return ((char *)haystack);
+	while (haystack[i] && i < len) //Pq no encapsulamos i<len??
 	{
-		if (haystack[i] == needle [j])
-			return (*haystack);
+		j = 0;
+		while (haystack[i +j] && haystack[i+j] == needle[j] && i + j < len) //Pq no encapsulamos i + j < len??
+		{
+			j++;
+			if (needle[j] == '\0')
+				return ((char *)(haystack + i));
+		}
 		i++;
 	}
+	return (NULL);
+}
 
+int	main()
+{
+	char	*string = "hola, qué tal estás?";
+	char	*search = "tal";
 
+	
+}

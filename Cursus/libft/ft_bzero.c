@@ -26,3 +26,14 @@
         i++;
     }
  }
+
+ int    main()
+ {
+    char    string[] = "hola"; //como array para poder modificarlo
+    //char *string estamos intentando acceder a un lugar de la memoria, violacion
+    //de segmento
+
+    ft_bzero(string, sizeof(string));
+    printf("%s", string);
+    return (0);
+ }

@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
+#include <stdlib.h>
 #define LIBFT_H
-#include <stdio.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
