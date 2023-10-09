@@ -1,37 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/23 17:30:27 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/09 11:29:44 by evasco-o         ###   ########.fr       */
+/*   Created: 2023/10/09 16:29:03 by evasco-o          #+#    #+#             */
+/*   Updated: 2023/10/09 16:34:11 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdio.h>
 
-// Writes len bytes of value (unsigned char)c to the string b
-
-void	*ft_memset(void *b, int c, size_t len)
+void	ft_putendl_fd(char *s, int fd)
 {
-	size_t	i;
+	int	len;
 
-	i = -1;
-	c = (unsigned char)c;
-	while (++i < len)
-		(((unsigned char *)b)[i] = c);
-	return (b);
+	len = ft_strlen(s);
+	write(fd, s, len);
+	write(fd, "\n", 1);
 }
 
-/*int	main(int argc, char **argv)
+/*int	main(void)
 {
-	if (argc != 4)
-		return (1);
-
-	char	*string = argv[1];
-	int		c = ft_atoi(argv[2]);
-	size_t	len = ft_atoi(argv[3]);
-	printf("%s", ft_memset(string, c, len));
+	ft_putendl_fd("Hello, World!", 1);
+	return (0);
 }*/

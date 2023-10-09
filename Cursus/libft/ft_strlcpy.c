@@ -6,7 +6,7 @@
 /*   By: evasco-o <evasco-o@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 23:41:24 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/03 15:42:16 by evasco-o         ###   ########.fr       */
+/*   Updated: 2023/10/09 11:17:26 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -29,4 +29,4 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	while (src[i])
 		i++;
 	return (i);
-}	
+}

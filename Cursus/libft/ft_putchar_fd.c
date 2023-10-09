@@ -1,37 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/23 17:30:27 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/09 11:29:44 by evasco-o         ###   ########.fr       */
+/*   Created: 2023/10/09 15:56:01 by evasco-o          #+#    #+#             */
+/*   Updated: 2023/10/09 16:00:29 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdio.h>
 
-// Writes len bytes of value (unsigned char)c to the string b
-
-void	*ft_memset(void *b, int c, size_t len)
+void	ft_putchar_fd(char c, int fd)
 {
-	size_t	i;
-
-	i = -1;
-	c = (unsigned char)c;
-	while (++i < len)
-		(((unsigned char *)b)[i] = c);
-	return (b);
+	if (fd > 0)
+		write(fd, &c, 1);
 }
 
-/*int	main(int argc, char **argv)
+/*int	main(void)
 {
-	if (argc != 4)
-		return (1);
-
-	char	*string = argv[1];
-	int		c = ft_atoi(argv[2]);
-	size_t	len = ft_atoi(argv[3]);
-	printf("%s", ft_memset(string, c, len));
+	ft_putchar_fd('c', 1);
+	return (0);
 }*/

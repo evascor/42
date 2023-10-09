@@ -6,7 +6,7 @@
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 16:36:32 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/02 17:02:18 by evasco-o         ###   ########.fr       */
+/*   Updated: 2023/10/09 17:04:58 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -33,6 +33,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		d[i] = s[i];
 		i++;
 	}
-	dst[n] = '\0'; // Prueba exp, para asegurar que es la cadena sea valida
+	d[n] = '\0';
 	return (dst);
 }

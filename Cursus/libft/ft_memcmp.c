@@ -6,7 +6,7 @@
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 10:53:31 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/03 15:50:26 by evasco-o         ###   ########.fr       */
+/*   Updated: 2023/10/09 11:49:37 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -30,11 +30,10 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (i < n - 1)
 	{
 		if (str1[i] != str2[i])
-			break;
+			break ;
 		i++;
 	}
 	return (str1[i] - str2[i]);
-
 	if (str1[i] != str2[i])
 		return (str1[i] - str2[i]);
 }
