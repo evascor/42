@@ -6,7 +6,7 @@
 /*   By: evasco-o <evasco-o@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 11:16:03 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/09 12:06:14 by evasco-o         ###   ########.fr       */
+/*   Updated: 2023/10/10 13:10:56 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	i;
-	size_t	d_len;
+	unsigned int	i;
+	unsigned int	d_len;
 
 	i = 0;
 	d_len = ft_strlen(dst);
