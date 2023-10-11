@@ -6,13 +6,14 @@
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 16:35:10 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/09 16:28:40 by evasco-o         ###   ########.fr       */
+/*   Updated: 2023/10/11 15:10:28 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

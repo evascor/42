@@ -6,11 +6,10 @@
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 16:36:32 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/10 11:49:49 by evasco-o         ###   ########.fr       */
+/*   Updated: 2023/10/11 15:18:03 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdio.h>
 
 // Copies n bytes from memory area src to memory area dst
 // If dst and src overlap, behavior undefined
@@ -31,3 +30,12 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
+/*int	main()
+{
+	char	dst[] = "Hola";
+	char	src[] = "Bye";
+
+	printf("%s\n", ft_memcpy(dst, src, 3));
+	return (0);
+}*/

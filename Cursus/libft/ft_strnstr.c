@@ -6,16 +6,15 @@
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 09:25:24 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/09 12:29:35 by evasco-o         ###   ########.fr       */
+/*   Updated: 2023/10/11 17:51:37 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	if (needle[0] == '\0')
@@ -36,8 +35,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 /*int	main()
 {
-	char	*string = "hola, qué tal estás?";
-	char	*search = "tal";
+	const char	*string = "Hola que tal estas";
+	const char	*search = "ola";
+	char		*ptr;
 
-	
+	ptr = ft_strnstr(string, search, 6);
+	printf("%s", ptr);
 }*/
