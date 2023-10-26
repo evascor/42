@@ -6,11 +6,10 @@
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 11:17:27 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/03 15:49:37 by evasco-o         ###   ########.fr       */
+/*   Updated: 2023/10/11 18:18:47 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_atoi(const char *str)
 {
@@ -37,3 +36,13 @@ int	ft_atoi(const char *str)
 	}
 	return (num * sign);
 }
+
+/*int main()
+{
+    const char *test_string = "   -42 is a number"; // Cambia esta cadena según tus necesidades.
+    int result = ft_atoi(test_string);
+
+    printf("La cadena \"%s\" se convierte a entero: %d\n", test_string, result);
+
+    return 0;
+}*/

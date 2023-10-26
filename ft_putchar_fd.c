@@ -1,32 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/22 17:47:25 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/11 13:22:19 by evasco-o         ###   ########.fr       */
+/*   Created: 2023/10/09 15:56:01 by evasco-o          #+#    #+#             */
+/*   Updated: 2023/10/09 16:00:29 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdio.h>
 
-size_t	ft_strlen(const char *s)
+void	ft_putchar_fd(char c, int fd)
 {
-	size_t	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	if (fd > 0)
+		write(fd, &c, 1);
 }
 
-// %zu para devolver un size_t
-
-/*int main(void)
+/*int	main(void)
 {
-	char *string = "Hola";
-	printf("%zu", ft_strlen(string));
+	ft_putchar_fd('c', 1);
 	return (0);
 }*/

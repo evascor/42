@@ -6,12 +6,12 @@
 /*   By: evasco-o <evasco-o@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 03:43:13 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/09 03:43:13 by evasco-o         ###   ########.fr       */
+/*   Updated: 2023/10/10 11:07:08 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-size_t	count_words(const char *str, char c)
+static	size_t	count_words(const char *str, char c)
 {
 	int		i;
 	size_t	count;
@@ -29,7 +29,7 @@ size_t	count_words(const char *str, char c)
 	return (count);
 }
 
-int	count_char(const char *str, int j, char c)
+static	int	count_char(const char *str, int j, char c)
 {
 	int	count;
 
@@ -42,7 +42,7 @@ int	count_char(const char *str, int j, char c)
 	return (count);
 }
 
-int	make_words(char **result, const char *str, char c, size_t words)
+static	int	make_words(char **result, const char *str, char c, size_t words)
 {
 	size_t	i;
 	int		j;
@@ -71,7 +71,7 @@ int	make_words(char **result, const char *str, char c, size_t words)
 	return (1);
 }
 
-char	**free_tab(char **result)
+static	char	**free_tab(char **result)
 {
 	int	i;
 

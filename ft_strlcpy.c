@@ -6,11 +6,10 @@
 /*   By: evasco-o <evasco-o@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 23:41:24 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/03 15:42:16 by evasco-o         ###   ########.fr       */
+/*   Updated: 2023/10/11 16:31:17 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-// #include <stdio.h>
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
@@ -29,4 +28,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	while (src[i])
 		i++;
 	return (i);
-}	
+}
+
+/*int	main()
+{
+	char	str1[] = "Hello,";
+	char	str2[] = " World!";
+
+	printf("%zu\n", ft_strlcpy(str1, str2, sizeof(str1)));
+	printf("%s", str1);
+	return (0);
+}*/

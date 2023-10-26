@@ -6,7 +6,7 @@
 /*   By: evasco-o <evasco-o@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 12:22:32 by evasco-o          #+#    #+#             */
-/*   Updated: 2023/10/03 15:48:03 by evasco-o         ###   ########.fr       */
+/*   Updated: 2023/10/11 16:00:15 by evasco-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -40,3 +40,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+
+/*int	main()
+{
+	char	dst[] = "Hola";
+	char	src[] = "Hi";
+
+	printf("%s\n", ft_memmove(dst, src, 2));
+	return (0);
+}*/
